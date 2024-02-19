@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: simpleapp-svc
 spec:
+  type: LoadBalancer
   selector:
     app: simpleapp
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8008
+  - port: 80
+    targetPort: 8008
