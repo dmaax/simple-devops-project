@@ -1,10 +1,10 @@
 1) Clone o repositório github.com/nopp/simpleapp-python:
-  - Crie uma imagem Docker da aplicação desse repositório
-  - Envie a imagem para o dockerhub
+  - [x] Crie uma imagem Docker da aplicação desse repositório
+  - [x] Envie a imagem para o dockerhub
 2) A partir da imagem criada, crie os seguintes yaml para subir a aplicação em Kubernetes:
-  - Deployment(simpleapp.yaml)
-  - Configmap(simpleapp-cm.yaml) com valor Code:redacted
-  - Utilizar o configmap(simpleapp-cm) como envFrom no deployment(simpleapp)
+  - [x] Deployment(simpleapp.yaml)
+  - [x] Configmap(simpleapp-cm.yaml) com valor Code:redacted
+  - [x] Utilizar o configmap(simpleapp-cm) como envFrom no deployment(simpleapp)
 3) Suba um cluster kubernetes e faça o deploy dos yaml do item 2
 4) Configure uma monitoração nesse cluster(via helm) utilizando:
   - Prometheus
