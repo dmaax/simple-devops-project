@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpleapp
+  labels:
+    app: simpleapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simpleapp
+  template:
+    metadata:
+      labels:
+        app: simpleapp
+    spec:
+      containers:
+      - name: simpleapp
+        image: dmaax/simple-app-python
+        ports:
+        - containerPort: 8008
+        envFrom:
+        - configMapRef:
+            name: configmap
+        resources:
+          limits:
+            cpu: "0.2"  # Change this to the CPU limit your application needs
+            memory: "100Mi"
+            
