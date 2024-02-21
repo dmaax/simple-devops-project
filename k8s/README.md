@@ -30,6 +30,8 @@ helm repo update
 helm install prometheus prometheus-community/kube-prometheus-stack
 ```
 
+## Bonus: [100 Seconds Demo](https://youtu.be/B13Gag8s3tk)
+
 <details>
   <summary>Missing Steps</summary>
   
