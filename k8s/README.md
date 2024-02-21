@@ -15,7 +15,7 @@
 
 ## Deploy the cluster
 ```bash
-kubectl apply -f simpleapp-cm.yaml -f simpleapp.yml -f service.yml
+kubectl apply -f simpleapp-cm.yaml -f simpleapp.yaml -f service.yaml
 ```
 
 ## Run grafana and prometheus
