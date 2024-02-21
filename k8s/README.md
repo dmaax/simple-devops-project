@@ -30,23 +30,11 @@ helm repo update
 helm install prometheus prometheus-community/kube-prometheus-stack
 ```
 
-## Deploy elasticsearch
-- First add the repository
-```bash
-helm repo add elastic https://helm.elastic.co
-helm repo update
-```
-- After that, install elasticsearch
-```bash
-helm install elasticsearch elastic/elasticsearch
-```
-
-## Deploy fluentd
-```bash
-kubectl apply -f fluentd.yml
-```
-
-## Deploy Kibana
-```bash
-helm install kibana elastic/kibana
-```
+<details>
+  <summary>Missing Steps</summary>
+  
+  - Deploy Elasticsearch
+  - Deploy Fluentd
+  - Deploy Kibana
+  
+</details>
